@@ -49,12 +49,12 @@ A demo result of SqueezeNet fine-tuning:
 
 ## Cite
 ```bibtex
-@inproceedings{Zhou2023AHE,
-  author    = {Monan Zhou and Shangda Wu and Shaohua Ji and Zijin Li and Wei Li},
-  title     = {A Holistic Evaluation of Piano Sound Quality},
-  booktitle = {Proceedings of the 10th Conference on Sound and Music Technology (CSMT)},
-  year      = {2023},
-  publisher = {Springer Singapore},
-  address   = {Singapore}
+@inproceedings{zhou2023holistic,
+  title        = {A holistic evaluation of piano sound quality},
+  author       = {Zhou, Monan and Wu, Shangda and Ji, Shaohua and Li, Zijin and Li, Wei},
+  booktitle    = {National Conference on Sound and Music Technology},
+  pages        = {3--17},
+  year         = {2023},
+  organization = {Springer}
 }
 ```
