@@ -51,9 +51,9 @@ A demo result of SqueezeNet fine-tuning:
 ```bibtex
 @inproceedings{zhou2023holistic,
   title        = {A holistic evaluation of piano sound quality},
-  author       = {Zhou, Monan and Wu, Shangda and Ji, Shaohua and Li, Zijin and Li, Wei},
+  author       = {Monan Zhou and Shangda Wu and Shaohua Ji and Zijin Li and Wei Li},
   booktitle    = {National Conference on Sound and Music Technology},
-  pages        = {3--17},
+  pages        = {3-17},
   year         = {2023},
   organization = {Springer}
 }
