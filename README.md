@@ -1,9 +1,10 @@
 # pianos
 [![license](https://img.shields.io/github/license/monetjoe/pianos.svg)](https://github.com/monetjoe/pianos/blob/master/LICENSE)
 [![Python application](https://github.com/monetjoe/pianos/actions/workflows/python-app.yml/badge.svg?branch=main)](https://github.com/monetjoe/pianos/actions/workflows/python-app.yml)
-[![](https://img.shields.io/badge/HuggingFace-pianos-ffd21e.svg)](https://huggingface.co/spaces/ccmusic-database/pianos)
-[![](https://img.shields.io/badge/ModelScope-pianos-624aff.svg)](https://www.modelscope.cn/studios/ccmusic-database/pianos)
-[![](https://img.shields.io/badge/arxiv-2310.04722-b31b1b.svg)](https://arxiv.org/pdf/2310.04722.pdf)
+[![hf](https://img.shields.io/badge/HuggingFace-pianos-ffd21e.svg)](https://huggingface.co/spaces/ccmusic-database/pianos)
+[![ms](https://img.shields.io/badge/ModelScope-pianos-624aff.svg)](https://www.modelscope.cn/studios/ccmusic-database/pianos)
+[![arxiv](https://img.shields.io/badge/arxiv-2310.04722-b31b1b.svg)](https://arxiv.org/pdf/2310.04722.pdf)
+[![csmt](https://img.shields.io/badge/DOI-10.1007/978--981--97--7962--8__1-001447.svg)](https://doi.org/10.1007/978-981-97-7962-8_1)
 
 Classify piano sound quality by fine-tuned pre-trained CNN models.
 
