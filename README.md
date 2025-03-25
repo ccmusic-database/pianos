@@ -3,7 +3,7 @@
 [![Python application](https://github.com/monetjoe/pianos/actions/workflows/python-app.yml/badge.svg?branch=main)](https://github.com/monetjoe/pianos/actions/workflows/python-app.yml)
 [![hf](https://img.shields.io/badge/HuggingFace-pianos-ffd21e.svg)](https://huggingface.co/spaces/ccmusic-database/pianos)
 [![ms](https://img.shields.io/badge/ModelScope-pianos-624aff.svg)](https://www.modelscope.cn/studios/ccmusic-database/pianos)
-[![arxiv](https://img.shields.io/badge/arxiv-2310.04722-b31b1b.svg)](https://arxiv.org/pdf/2310.04722.pdf)
+[![arxiv](https://img.shields.io/badge/arXiv-2310.04722-b31b1b.svg)](https://arxiv.org/pdf/2310.04722.pdf)
 [![csmt](https://img.shields.io/badge/DOI-10.1007/978--981--97--7962--8__1-001447.svg)](https://doi.org/10.1007/978-981-97-7962-8_1)
 
 Classify piano sound quality by fine-tuned pre-trained CNN models.
