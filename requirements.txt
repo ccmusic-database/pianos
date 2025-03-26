@@ -7,4 +7,3 @@ scikit-learn
 numpy==1.26.4
 datasets==2.18
 modelscope[framework]==1.18.1
--i https://pypi.tuna.tsinghua.edu.cn/simple
