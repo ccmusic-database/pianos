@@ -51,7 +51,7 @@ A demo result of SqueezeNet fine-tuning:
 ## Cite
 ```bibtex
 @inproceedings{zhou2023holistic,
-  title        = {A holistic evaluation of piano sound quality},
+  title        = {A Holistic Evaluation of Piano Sound Quality},
   author       = {Monan Zhou and Shangda Wu and Shaohua Ji and Zijin Li and Wei Li},
   booktitle    = {National Conference on Sound and Music Technology},
   pages        = {3-17},
