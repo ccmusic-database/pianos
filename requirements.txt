@@ -1,9 +1,8 @@
 torch==2.6.0+cu118
--f https://download.pytorch.org/whl/torch
 torchvision==0.21.0+cu118
--f https://download.pytorch.org/whl/torchvision
+https://mirrors.aliyun.com/pytorch-wheels/cu118
 matplotlib
 scikit-learn
 numpy==1.26.4
 datasets==2.18
-modelscope[framework]==1.18.1
+modelscope[framework]==1.21
