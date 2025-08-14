@@ -155,7 +155,6 @@ def train(backbone_ver="squeezenet1_1", epoch_num=40, iteration=10, lr=0.001):
         mode="min",
         factor=0.1,
         patience=5,
-        verbose=True,
         threshold=lr,
         threshold_mode="rel",
         cooldown=0,
