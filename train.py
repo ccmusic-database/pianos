@@ -81,14 +81,17 @@ def save_log(
     cm,
     log_dir,
     classes,
+    backbone,
+    full_finetune,
+    use_wce,
 ):
     logs = f"""
-Backbone     : {args.model}
+Backbone     : {backbone}
 Start time   : {start_time}
 Finish time  : {finish_time}
 Time cost    : {(finish_time - start_time).seconds}s
-Full finetune: {args.fullfinetune}
-Focal loss   : {args.wce}"""
+Full finetune: {full_finetune}
+Focal loss   : {use_wce}"""
 
     with open(f"{log_dir}/result.log", "w", encoding="utf-8") as f:
         f.write(cls_report + "\n" + logs + "\n")
@@ -114,6 +117,9 @@ def save_history(
     start_time,
     finish_time,
     classes,
+    backbone,
+    full_finetune,
+    use_wce,
 ):
     acc_len = len(tra_acc_list)
     with open(f"{log_dir}/acc.csv", "w", newline="") as csvfile:
@@ -131,7 +137,17 @@ def save_history(
 
     save_acc(tra_acc_list, val_acc_list, log_dir)
     save_loss(loss_list, log_dir)
-    save_log(start_time, finish_time, cls_report, cm, log_dir, classes)
+    save_log(
+        start_time,
+        finish_time,
+        cls_report,
+        cm,
+        log_dir,
+        classes,
+        backbone,
+        full_finetune,
+        use_wce,
+    )
 
 
 def train(
@@ -244,6 +260,9 @@ def train(
         start_time,
         finish_time,
         classes,
+        backbone_ver,
+        full_finetune,
+        use_wce,
     )
 
 
