@@ -4,11 +4,10 @@ import argparse
 import warnings
 import numpy as np
 import torch.nn as nn
-import torch.utils.data
 import torch.optim as optim
 from utils import *
 from datetime import datetime
-from model import Net, WCE, models
+from model import Net, WCE
 from sklearn.metrics import classification_report, accuracy_score, confusion_matrix
 from plot import save_acc, save_loss, save_confusion_matrix
 from data import prepare_data, load_data
