@@ -1,8 +1,8 @@
--f https://mirrors.aliyun.com/pytorch-wheels/cu118
+-f https://mirrors.aliyun.com/pytorch-wheels/cu126
 datasets==2.18
 matplotlib
 modelscope[framework]==1.18
 numpy==1.26.4
 scikit-learn
-torch==2.7.1+cu118
-torchvision==0.22.1+cu118
+torch==2.8.0+cu126
+torchvision==0.23.0+cu126
