@@ -134,21 +134,28 @@ def save_history(
     save_log(start_time, finish_time, cls_report, cm, log_dir, classes)
 
 
-def train(backbone_ver="squeezenet1_1", epoch_num=40, iteration=10, lr=0.001):
+def train(
+    backbone_ver="squeezenet1_1",
+    epoch_num=40,
+    iteration=10,
+    lr=0.001,
+    use_wce=True,
+    full_finetune=True,
+):
     # device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     tra_acc_list, val_acc_list, loss_list, lr_list = [], [], [], []
 
     # load data
-    ds, classes, num_samples = prepare_data(args.wce)
+    ds, classes, num_samples = prepare_data(use_wce)
     cls_num = len(classes)
 
     # init model
-    model = Net(cls_num, m_ver=backbone_ver, full_finetune=args.fullfinetune)
+    model = Net(cls_num, m_ver=backbone_ver, full_finetune=full_finetune)
     input_size = model._get_insize()
     traLoader, valLoader, tesLoader = load_data(ds, input_size)
 
     # optimizer and loss
-    criterion = WCE(num_samples) if args.wce else nn.CrossEntropyLoss()
+    criterion = WCE(num_samples) if use_wce else nn.CrossEntropyLoss()
     optimizer = optim.SGD(model.parameters(), lr, momentum=0.9)
     scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(
         optimizer,
@@ -173,9 +180,9 @@ def train(backbone_ver="squeezenet1_1", epoch_num=40, iteration=10, lr=0.001):
 
     # train process
     start_time = datetime.now()
-    log_dir = f"{LOGS_DIR}/{args.model}__{start_time.strftime('%Y-%m-%d_%H-%M-%S')}"
+    log_dir = f"{LOGS_DIR}/{backbone_ver}__{start_time.strftime('%Y-%m-%d_%H-%M-%S')}"
     create_dir(log_dir)
-    print(f"Start training {args.model} at {start_time}...")
+    print(f"Start training {backbone_ver} at {start_time}...")
     # loop over the dataset multiple times
     for epoch in range(epoch_num):
         epoch_str = f" Epoch {epoch + 1}/{epoch_num} "
@@ -244,7 +251,13 @@ if __name__ == "__main__":
     warnings.filterwarnings("ignore")
     parser = argparse.ArgumentParser(description="train")
     parser.add_argument("--model", type=str, default="squeezenet1_1")
+    parser.add_argument("--epoch", type=int, default=40)
     parser.add_argument("--wce", type=bool, default=True)
-    parser.add_argument("--fullfinetune", type=bool, default=False)
+    parser.add_argument("--fullfinetune", type=bool, default=True)
     args = parser.parse_args()
-    train(backbone_ver=args.model, epoch_num=2)  # 2 for test
+    train(
+        backbone_ver=args.model,
+        epoch_num=args.epoch,
+        use_wce=args.wce,
+        full_finetune=args.fullfinetune,
+    )
