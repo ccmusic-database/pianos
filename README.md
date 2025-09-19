@@ -1,7 +1,7 @@
 # pianos
 [![license](https://img.shields.io/github/license/ccmusic-database/pianos.svg)](./LICENSE)
 [![Python application](https://github.com/ccmusic-database/pianos/actions/workflows/python-app.yml/badge.svg?branch=main)](https://github.com/ccmusic-database/pianos/actions/workflows/python-app.yml)
-[![hf](https://img.shields.io/badge/HuggingFace-pianos-ffd21e.svg)](https://huggingface.co/collections/ccmusic-database/pianos-67e39971c0749958f63b2b7c)
+[![hf](https://img.shields.io/badge/HuggingFace-pianos-ffd21e.svg)](https://huggingface.co/collections/monetjoe/pianos-67e39971c0749958f63b2b7c)
 [![ms](https://img.shields.io/badge/ModelScope-pianos-624aff.svg)](https://www.modelscope.cn/collections/pianos-a1856d7f57284c)
 [![arxiv](https://img.shields.io/badge/arXiv-2310.04722-b31b1b.svg)](https://arxiv.org/pdf/2310.04722.pdf)
 [![csmt](https://img.shields.io/badge/DOI-10.1007/978--981--97--7962--8__1-001447.svg)](https://doi.org/10.1007/978-981-97-7962-8_1)
