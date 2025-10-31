@@ -1,5 +1,5 @@
 dataset/*
-__pycache__/*
+*__pycache__*
 model/*
 data/*
 logs/*
@@ -9,5 +9,4 @@ debug.log
 results/*
 test.py
 output/*
-rename.sh
-test.ipynb
+test.*
